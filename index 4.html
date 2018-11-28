@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("nhap diem bai kiem tra"));
+    var b = parseInt(prompt("nhap diem bai thi giua ky"));
+    var c = parseInt(prompt("nhap diem bai thi cuoi ky"));
+
+    if(a > 10 || a < 0 || b > 10 || b < 0 || c > 10 || c < 0 ){
+        alert("so diem ban nhap dang sai, vui long nhap lai");
+    }
+    var D = (a + b*2 + c*3)/6;
+    if(D >= 8){
+        alert("hoc sinh sep loai gioi");
+    }else if(6.5 <= D){
+        alert("hoc sinh sep loai kha")
+    }else if(5.5 <= D){
+        alert("hoc sinh sep loai trung binh");
+    }else if(4.5 <= D){
+        alert("hoc sinh sep loai kem");
+    }else{
+        alert("hoc lai");
+    };
+</script>
+</body>
+</html>
